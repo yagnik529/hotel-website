@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         .nav{
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: space-around;
+            position: sticky;
+            top: 0; 
+            z-index: 1;
+            background-color: white;
+             /* z-index: 1; */
+            /* border: 1px solid black; */
+        }
+        .n1{
+            /* border: 1px solid black; */
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .n2{
+            /* border: 1px solid black; */
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+        .n3{
+            /* border: 1px solid black; */
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+        }
+        .tab1 td{
+            border: 1px solid black;
+            border-radius: 25px;
+            width: 150px;
+           height: 40px;
+            text-align: center;
+        }
+        .rou{
+            height: 10px;
+            width: 10px;
+            background-color: green;
+            border-radius: 50%;
+        }
+        .cap{
+            height: 10px;
+            width: 150px;
+            background-color: green;
+            border-radius: 20px;
+        }
+        button:hover{
+            background-color: black;
+            transition: ease-in;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="n1">
+            <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg" alt=""  height="60px" width="190px" >
+        </div>
+        <div class="n4">
+            <input type="text" style="height: 40px; width: 400px; border-radius: 25px; padding-left: 40px;position: relative; z-index: -1; margin-top: 15px;" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass" style="position: absolute; top: 29px; font-size: 20px;left: 280px; display: flex; "></i>
+        </div>
+        <div class="n2">
+            <table cellspacing="20">
+                <tr>
+                    <td>Discover</td>
+                    <td>Trips</td>
+                    <td>Review</td>
+                    <td>More</td>
+                </tr>
+            </table>
+        </div>
+        <div class="n3">
+            <div style=" height: 60px; width: 120px; border-radius: 40%; display: flex;justify-content: center; align-items: center; gap: 10px; font-size: 20px;">
+                <i class="fa-solid fa-earth-oceania"></i>
+                <span style="font-weight: bolder; font-size: 25px;">|</span>
+                <span>INR</span>
+            </div>
+
+            
+        </div>
+        <div class="n5" style="display: flex; justify-content: center; ">
+          <a href="inddex3.html"> <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/e7/99/default-avatar-2020-57.jpg?w=100&h=-1&s=1" alt="" style="height: 50px; width: 50px; border-radius: 50%; position: absolute;
+            right: 30px; top: 10px;"></a> 
+        </div>
+    </div>
+<div style="background-color: white;">
+    <table cellspacing="20" style="margin-left: 22px; font-size: 20px;">
+        <tr>
+            <td>hotel</td>
+            <td>things to do</td>
+            <td>
+               <a href="index4.html"> Restorent</a></td>
+            <td>flights</td>
+            <td>holiday homes</td>
+            <td>criises</td>
+            <td><font-awesome-icon :icon="['fas', 'ellipsis']" /></td>
+        </tr>
+    </table>
+</div>
+    
+    <div>
+        <img src="https://static.tacdn.com/img2/tc/2024/hotels/Top.png" alt="" height="500px" width="100%" style="position: relative;">
+        <img src="https://static.tacdn.com/img2/tc/2024/TC_2024_botb_badge_LL.png" alt="" style="position: absolute; top: 390px; left: 150px;" height="100px" width="100px" >
+        <div style="height: 200px; width:100% ; opacity: 30%; background-color: black; position: absolute;top: 377px; ">
+
+        </div>
+       <div style="position: absolute; top:390px; left: 260px; color: white;">
+        <h3>Travellers’ Choice Awards</h3>
+        <h1>Best of the Best Hotels</h1>
+       </div>
+    </div>
+
+    <div style="display: flex; justify-content: center; gap: 50px;">
+        <select style="height: 50px; width: 150px; display: flex; text-align: center; font-size: 20px; border-radius: 20px; margin-top: 17px; ">
+            <option value="">india</option>
+            <option value="">pakistan</option>
+            <option value="">china</option>
+            <option value="">nepal</option>
+            <option value="">canada</option>
+            <option value="">usa</option>
+        </select>
+        <div class="tab1">
+             <table cellspacing="20" style="font-size: 20px;">
+                <tr>
+                    <td>
+                        <i class="fa-solid fa-trophy"></i>Top
+                    </td>
+                    <td>
+                        <i class="fa-solid fa-gem"></i>Luxrey
+                    </td>
+                    <td>
+                        <i class="fa-solid fa-people-group"></i>Family
+                    </td>
+                    <td>
+                        <i class="fa-solid fa-hand"></i>pet friendly
+                    </td>
+                    <td>
+                        <i class="fa-solid fa-bowl-food"></i>All inclusive
+                    </td>
+                    <td>
+                        <i class="fa-solid fa-hotel"></i>B&Bs
+                    </td>
+                </tr>
+             </table>
+        </div>
+    </div>
+
+    <div style="margin-left: 120px;">
+        <h1>Top - World</h1>
+        <h4 style="color: rgb(83, 83, 83); font-weight: 400;">When you think of a hotel that checks all the boxes (outstanding service, comfy rooms, the works) it’s probably one of<br>  these winning spots.</h4>
+        <h4 style="color: rgb(83, 83, 83); font-weight: 400;">
+            The Travellers’ Choice Awards Best of the Best title celebrates the highest level of excellence in travel. It’s awarded to<br> those who receive a high volume of above-and-beyond reviews and opinions from the Tripadvisor community over a 12- <br>month period. Out of our 8 million listings, fewer than 1% achieve this milestone.
+        </h4>
+    </div>
+
+    <hr style=" width: 1000px; height: 1px; background-color: yellow;">
+
+    <div style="margin-left: 295px; height: 1000px; width: 900px; border-radius: 25px 25px; background-color: #f2f1ec;">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/04/4e/b2/hotel-colline-de-france.jpg?w=1200&s=1" alt="" height="500px" width="900px" style=" border-radius: 25px 25px 0px 0px;">
+        <div style="display: flex; ">
+            <div style="width: 600px;">
+                <h3 style="margin-left: 60px;">01.</h3>
+                <h1 style="margin-left: 60px;">Hotel Colline de France</h1>
+                <span style="margin-left: 60px;"><i class="fa-solid fa-location-dot"></i></span><span style="margin-left: 15px;">Gramado, Brazil</span>
+                <br><br>
+                <span style="margin-left: 60px;"><i class="fa-solid fa-fire"></i></span>
+        
+                <span style="margin-left: 10px;">Hotel Colline de France sits in a lovely setting, where you'll find a mix of <br><span style="margin-left: 60px;"> sophistication and comfort. The rooms feel luxe with large beds and</span> <br> <span style="margin-left: 60px;">L'Occitane amenities, while the Imperial suite is even more indulgent.</span></span>
+
+                <br><br>
+                <h4 style="margin-left: 60px;">What travellers love most</h4>
+                <table cellspacing="20" style="margin-left: 60px;">
+                    <tr>
+                        <td style="border: 1px solid; border-radius: 25px; height: 40px; background-color: white; width: 100px; text-align: center;">Heated pool</td>
+                        <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">spa</td>
+                        <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">restorent</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div style="margin-top: 155px;">
+                <table>
+                    <tr>
+                        <td>5.0</td>
+                        <td>
+                            <div class="rou"></div>
+                        </td>
+                        <td>
+                            <div class="rou"></div>
+                        </td>
+                        <td>
+                            <div class="rou"></div>
+                        </td>
+                        <td>
+                            <div class="rou"></div>
+                        </td>
+                        <td>
+                            <div class="rou"></div>
+                        </td>
+                        <td>
+                            4,309 rivews
+                        </td>
+                    </tr>
+                </table>
+
+                <table style="margin-top: 50px;">
+                    <tr>
+                        <td>
+                            location
+                        </td>
+                        <td>
+                            <div class="cap"></div>
+                        </td>
+                        <td>
+                            4.9
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Cleanliness
+                        </td>
+                        <td>
+                            <div class="cap"></div>
+                        </td>
+                        <td>
+                            4.9
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Service
+                        </td>
+                        <td>
+                            <div class="cap"></div>
+                        </td>
+                        <td>
+                            4.9
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Value
+                        </td>
+                        <td>
+                            <div class="cap"></div>
+                        </td>
+                        <td>
+                            4.9
+                        </td>
+                    </tr>
+                   
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div style="display: flex; width: 1100px; margin-left: 190px; justify-content: space-around; margin-top: 50px;">
+        <div style="border: 1px solid black ; border-radius: 25px; height: 170px; width: 355px; padding-top: 20px;">
+            <table>
+                <tr>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                </tr>
+            </table>
+            <br>
+            <span>
+                Best place I have ever visited. I would recommend it to<br> anyone thinking about visiting. We would revisit this<br> place easily. Some friends of ours told us about their<br>
+                <hr style="margin-top: 20px;">
+            </span>
+            <table cellspacing="15">
+                <tr>
+                    <td>
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f2/7a/default-avatar-2020-25.jpg?w=100&h=100&s=1" alt="" style="height: 35px; width: 35px; border-radius: 50%;">
+                    </td>
+                    <td>
+                        
+                        @mikemY3411ID
+                    </td>
+                    <td>
+                        Reviewed May 2024
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+
+        <div style="border: 1px solid black ; border-radius: 25px; height: 170px; width: 355px; padding-top: 20px;">
+            <table>
+                <tr>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                </tr>
+            </table>
+            <br>
+            <span>
+                Best place I have ever visited. I would recommend it to<br> anyone thinking about visiting. We would revisit this<br> place easily. Some friends of ours told us about their<br>
+                <hr style="margin-top: 20px;">
+            </span>
+            <table cellspacing="15">
+                <tr>
+                    <td>
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f2/7a/default-avatar-2020-25.jpg?w=100&h=100&s=1" alt="" style="height: 35px; width: 35px; border-radius: 50%;">
+                    </td>   
+                    <td>    
+
+                        @mikemY3411ID   
+                    </td>   
+                    <td>    
+                        Reviewed May 2024   
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+
+        <div style="border: 1px solid black ; border-radius: 25px; height: 170px; width: 355px; padding-top: 20px;">
+            <table>
+                <tr>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                </tr>
+            </table>
+            <br>
+            <span>
+                Best place I have ever visited. I would recommend it to<br> anyone thinking about visiting. We would revisit this<br> place easily. Some friends of ours told us about their<br>
+                <hr style="margin-top: 20px;">
+            </span>
+            <table cellspacing="15">
+                <tr>
+                    <td>
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f2/7a/default-avatar-2020-25.jpg?w=100&h=100&s=1" alt="" style="height: 35px; width: 35px; border-radius: 50%;">
+                    </td>
+                    <td>
+                        
+                        @mikemY3411ID
+                    </td>
+                    <td>
+                        Reviewed May 2024
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+
+    <hr style=" width: 1000px; height: 1px; background-color: yellow; margin-top: 10px;">
+
+    <div style="width: 1000px; height: 500px; display: flex; justify-content: space-between; margin-left: 220px; margin-top: 50px;">
+        <div style="height: 400px; width: 500px; margin-top: 20px;" >
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/c3/39/22/caption.jpg?w=500&h=400&s=1" alt="">
+        </div>
+
+
+
+        <div style="height: 400px; width: 500px;">
+            <h2>02.</h2>
+            <h1>OBLU SELECT Lobigili</h1>
+            <h2><span ><i class="fa-solid fa-location-dot"></i></span><span>Male, Maldives
+            </span></h2>
+            <table>
+                <tr>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td>2,032 reviews</td>
+                </tr>
+            </table>
+            <h3>
+                Check out OBLU SELECT Lobigili, where idyllic tropical vistas meet nature-inspired designs. Picture a secluded, adults-only setting with modern accommodations, private pools, and amazing views.
+
+            </h3>
+
+            <h4 style="margin-left: 60px;">What travellers love most</h4>
+                <table cellspacing="20" style="margin-left: 60px;">
+                    <tr>
+                        <td style="border: 1px solid; border-radius: 25px; height: 40px; background-color: white; width: 100px; text-align: center;">Heated pool</td>
+                        <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">spa</td>
+                        <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">restorent</td>
+                    </tr>
+                </table>
+        </div>
+    </div>
+
+    <!--  -->
+
+    <div style="width: 1000px; height: 500px; display: flex; justify-content: space-between; margin-left: 220px; margin-top: 50px;">
+        <div style="height: 400px; width: 500px; margin-top: 20px;" >
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/1b/d3/a4/executive-suite.jpg?w=500&h=400&s=1" alt="">
+        </div>
+
+
+
+        <div style="height: 400px; width: 500px;">
+            <h2>02.</h2>
+            <h1>OBLU SELECT Lobigili</h1>
+            <h2><span ><i class="fa-solid fa-location-dot"></i></span><span>Male, Maldives
+            </span></h2>
+            <table>
+                <tr>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td>2,032 reviews</td>
+                </tr>
+            </table>
+            <h3>
+                Check out OBLU SELECT Lobigili, where idyllic tropical vistas meet nature-inspired designs. Picture a secluded, adults-only setting with modern accommodations, private pools, and amazing views.
+
+            </h3>
+
+            <h4 style="margin-left: 60px;">What travellers love most</h4>
+                <table cellspacing="20" style="margin-left: 60px;">
+                    <tr>
+                        <td style="border: 1px solid; border-radius: 25px; height: 40px; background-color: white; width: 100px; text-align: center;">Heated pool</td>
+                        <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">spa</td>
+                        <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">restorent</td>
+                    </tr>
+                </table>
+        </div>
+    </div>
+
+    <!--  -->
+
+    <div style="width: 1000px;  height: 500px; display: flex; justify-content: space-between; margin-left: 220px; margin-top: 50px;">
+        <div style="height: 400px; width: 500px; margin-top: 20px;" >
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/16/0d/ca/adiwana-suweta.jpg?w=500&h=400&s=1" alt="">
+        </div>
+
+
+
+        <div style="height: 400px; width: 500px;">
+            <h2>02.</h2>
+            <h1>OBLU SELECT Lobigili</h1>
+            <h2><span ><i class="fa-solid fa-location-dot"></i></span><span>Male, Maldives
+            </span></h2>
+            <table>
+                <tr>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td>2,032 reviews</td>
+                </tr>
+            </table>
+            <h3>
+                Check out OBLU SELECT Lobigili, where idyllic tropical vistas meet nature-inspired designs. Picture a secluded, adults-only setting with modern accommodations, private pools, and amazing views.
+
+            </h3>
+
+            <h4 style="margin-left: 60px;">What travellers love most</h4>
+                <table cellspacing="20" style="margin-left: 60px;">
+                    <tr>
+                        <td style="border: 1px solid; border-radius: 25px; height: 40px; background-color: white; width: 100px; text-align: center;">Heated pool</td>
+                        <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">spa</td>
+                        <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">restorent</td>
+                    </tr>
+                </table>
+        </div>
+    </div>
+
+    <!--  -->
+
+    <div style="width: 1000px; height: 500px; display: flex; justify-content: space-between; margin-left: 220px; margin-top: 50px;">
+        <div style="height: 400px; width: 500px; margin-top: 20px;" >
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/e1/b9/ed/caption.jpg?w=500&h=400&s=1" alt="">
+        </div>
+
+
+
+        <div style="height: 400px; width: 500px;">
+            <h2>02.</h2>
+            <h1>OBLU SELECT Lobigili</h1>
+            <h2><span ><i class="fa-solid fa-location-dot"></i></span><span>Male, Maldives
+            </span></h2>
+            <table>
+                <tr>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td>2,032 reviews</td>
+                </tr>
+            </table>
+            <h3>
+                Check out OBLU SELECT Lobigili, where idyllic tropical vistas meet nature-inspired designs. Picture a secluded, adults-only setting with modern accommodations, private pools, and amazing views.
+
+            </h3>
+
+            <h4 style="margin-left: 60px;">What travellers love most</h4>
+                <table cellspacing="20" style="margin-left: 60px;">
+                    <tr>
+                        <td style="border: 1px solid; border-radius: 25px; height: 40px; background-color: white; width: 100px; text-align: center;">Heated pool</td>
+                        <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">spa</td>
+                        <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">restorent</td>
+                    </tr>
+                </table>
+        </div>
+    </div>
+
+    <!--  -->
+
+    <div style="width: 1000px;  height: 500px; display: flex; justify-content: space-between; margin-left: 220px; margin-top: 50px;">
+        <div style="height: 400px; width: 500px; margin-top: 20px;" >
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/28/5b/8d/aerial-view.jpg?w=500&h=400&s=1" alt="">
+        </div>
+
+
+
+        <div style="height: 400px; width: 500px;">
+            <h2>02.</h2>
+            <h1>OBLU SELECT Lobigili</h1>
+            <h2><span ><i class="fa-solid fa-location-dot"></i></span><span>Male, Maldives
+            </span></h2>
+            <table>
+                <tr>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td>2,032 reviews</td>
+                </tr>
+            </table>
+            <h3>
+                Check out OBLU SELECT Lobigili, where idyllic tropical vistas meet nature-inspired designs. Picture a secluded, adults-only setting with modern accommodations, private pools, and amazing views.
+
+            </h3>
+
+            <h4 style="margin-left: 60px;">What travellers love most</h4>
+                <table cellspacing="20" style="margin-left: 60px;">
+                    <tr>
+                        <td style="border: 1px solid; border-radius: 25px; height: 40px; background-color: white; width: 100px; text-align: center;">Heated pool</td>
+                        <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">spa</td>
+                        <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">restorent</td>
+                    </tr>
+                </table>
+        </div>
+    </div>
+
+    <!--  -->
+
+    <div style="width: 1000px;  height: 500px; display: flex; justify-content: space-between; margin-left: 220px; margin-top: 50px;">
+        <div style="height: 400px; width: 500px; margin-top: 20px;" >
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/59/4c/d3/hanoi-la-siesta-hotel.jpg?w=500&h=400&s=1" alt="">
+        </div>
+
+
+
+        <div style="height: 400px; width: 500px;">
+            <h2>02.</h2>
+            <h1>OBLU SELECT Lobigili</h1>
+            <h2><span ><i class="fa-solid fa-location-dot"></i></span><span>Male, Maldives
+            </span></h2>
+            <table>
+                <tr>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td><div class="rou"></div></td>
+                    <td>2,032 reviews</td>
+                </tr>
+            </table>
+            <h3>
+                Check out OBLU SELECT Lobigili, where idyllic tropical vistas meet nature-inspired designs. Picture a secluded, adults-only setting with modern accommodations, private pools, and amazing views.
+
+            </h3>
+
+            <h4 style="margin-left: 60px;">What travellers love most</h4>
+                <table cellspacing="20" style="margin-left: 60px;">
+                    <tr>
+                        <td style="border: 1px solid; border-radius: 25px; height: 40px; background-color: white; width: 100px; text-align: center;">Heated pool</td>
+                        <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">spa</td>
+                        <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">restorent</td>
+                    </tr>
+                </table>
+        </div>
+    </div>
+    <!--  -->
+
+    <div>
+        <img src="https://static.tacdn.com/img2/tc/2024/cross_banner_save_your_fave_hotels_3424_1200.png" alt="" height="400px" width="1500px">
+
+        <div style="position: absolute; top: 5550px; left: 700px;">
+            <h1>Save your fave<br> hotels as you go</h1>
+            <h3>Just tap the heart and save for when you’re ready to <br>start planning.    </h3>
+        </div>
+    </div>
+
+  <!--  -->
+
+  <div style="width: 1000px;  height: 500px; display: flex; justify-content: space-between; margin-left: 220px; margin-top: 50px;">
+    <div style="height: 400px; width: 500px; margin-top: 20px;" >
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/77/08/1a/panoramic-view-of-the.jpg?w=500&h=400&s=1" alt="">
+    </div>
+
+
+
+    <div style="height: 400px; width: 500px;">
+        <h2>02.</h2>
+        <h1>OBLU SELECT Lobigili</h1>
+        <h2><span ><i class="fa-solid fa-location-dot"></i></span><span>Male, Maldives
+        </span></h2>
+        <table>
+            <tr>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td>2,032 reviews</td>
+            </tr>
+        </table>
+        <h3>
+            Check out OBLU SELECT Lobigili, where idyllic tropical vistas meet nature-inspired designs. Picture a secluded, adults-only setting with modern accommodations, private pools, and amazing views.
+
+        </h3>
+
+        <h4 style="margin-left: 60px;">What travellers love most</h4>
+            <table cellspacing="20" style="margin-left: 60px;">
+                <tr>
+                    <td style="border: 1px solid; border-radius: 25px; height: 40px; background-color: white; width: 100px; text-align: center;">Heated pool</td>
+                    <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">spa</td>
+                    <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">restorent</td>
+                </tr>
+            </table>
+    </div>
+</div>
+<!--  -->
+
+<!--  -->
+
+<div style="width: 1000px;  height: 500px; display: flex; justify-content: space-between; margin-left: 220px; margin-top: 50px;">
+    <div style="height: 400px; width: 500px; margin-top: 20px;" >
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/f8/1c/13/padma-resort-ubud.jpg?w=500&h=400&s=1" alt="">
+    </div>
+
+
+
+    <div style="height: 400px; width: 500px;">
+        <h2>02.</h2>
+        <h1>OBLU SELECT Lobigili</h1>
+        <h2><span ><i class="fa-solid fa-location-dot"></i></span><span>Male, Maldives
+        </span></h2>
+        <table>
+            <tr>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td>2,032 reviews</td>
+            </tr>
+        </table>
+        <h3>
+            Check out OBLU SELECT Lobigili, where idyllic tropical vistas meet nature-inspired designs. Picture a secluded, adults-only setting with modern accommodations, private pools, and amazing views.
+
+        </h3>
+
+        <h4 style="margin-left: 60px;">What travellers love most</h4>
+            <table cellspacing="20" style="margin-left: 60px;">
+                <tr>
+                    <td style="border: 1px solid; border-radius: 25px; height: 40px; background-color: white; width: 100px; text-align: center;">Heated pool</td>
+                    <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">spa</td>
+                    <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">restorent</td>
+                </tr>
+            </table>
+    </div>
+</div>
+<!--  -->
+
+<!--  -->
+
+<div style="width: 1000px;  height: 500px; display: flex; justify-content: space-between; margin-left: 220px; margin-top: 50px;">
+    <div style="height: 400px; width: 500px; margin-top: 20px;" >
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/12/17/e7/exterior-view.jpg?w=500&h=400&s=1" alt="">
+    </div>
+
+
+
+    <div style="height: 400px; width: 500px;">
+        <h2>02.</h2>
+        <h1>OBLU SELECT Lobigili</h1>
+        <h2><span ><i class="fa-solid fa-location-dot"></i></span><span>Male, Maldives
+        </span></h2>
+        <table>
+            <tr>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td>2,032 reviews</td>
+            </tr>
+        </table>
+        <h3>
+            Check out OBLU SELECT Lobigili, where idyllic tropical vistas meet nature-inspired designs. Picture a secluded, adults-only setting with modern accommodations, private pools, and amazing views.
+
+        </h3>
+
+        <h4 style="margin-left: 60px;">What travellers love most</h4>
+            <table cellspacing="20" style="margin-left: 60px;">
+                <tr>
+                    <td style="border: 1px solid; border-radius: 25px; height: 40px; background-color: white; width: 100px; text-align: center;">Heated pool</td>
+                    <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">spa</td>
+                    <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">restorent</td>
+                </tr>
+            </table>
+    </div>
+</div>
+<!--  -->
+
+
+<!--  -->
+
+<div style="width: 1000px;  height: 500px; display: flex; justify-content: space-between; margin-left: 220px; margin-top: 50px;">
+    <div style="height: 400px; width: 500px; margin-top: 20px;" >
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/1d/ac/30/corpo-santo-lisbon-historical.jpg?w=500&h=400&s=1" alt="">
+    </div>
+
+
+
+    <div style="height: 400px; width: 500px;">
+        <h2>02.</h2>
+        <h1>OBLU SELECT Lobigili</h1>
+        <h2><span ><i class="fa-solid fa-location-dot"></i></span><span>Male, Maldives
+        </span></h2>
+        <table>
+            <tr>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td>2,032 reviews</td>
+            </tr>
+        </table>
+        <h3>
+            Check out OBLU SELECT Lobigili, where idyllic tropical vistas meet nature-inspired designs. Picture a secluded, adults-only setting with modern accommodations, private pools, and amazing views.
+
+        </h3>
+
+        <h4 style="margin-left: 60px;">What travellers love most</h4>
+            <table cellspacing="20" style="margin-left: 60px;">
+                <tr>
+                    <td style="border: 1px solid; border-radius: 25px; height: 40px; background-color: white; width: 100px; text-align: center;">Heated pool</td>
+                    <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">spa</td>
+                    <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">restorent</td>
+                </tr>
+            </table>
+    </div>
+</div>
+<!--  -->
+
+<!--  -->
+
+<div style="width: 1000px;  height: 500px; display: flex; justify-content: space-between; margin-left: 220px; margin-top: 50px;">
+    <div style="height: 400px; width: 500px; margin-top: 20px;" >
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/42/68/c6/wide-open-spaces-at-our.jpg?w=500&h=400&s=1" alt="">
+    </div>
+
+
+
+    <div style="height: 400px; width: 500px;">
+        <h2>02.</h2>
+        <h1>OBLU SELECT Lobigili</h1>
+        <h2><span ><i class="fa-solid fa-location-dot"></i></span><span>Male, Maldives
+        </span></h2>
+        <table>
+            <tr>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td>2,032 reviews</td>
+            </tr>
+        </table>
+        <h3>
+            Check out OBLU SELECT Lobigili, where idyllic tropical vistas meet nature-inspired designs. Picture a secluded, adults-only setting with modern accommodations, private pools, and amazing views.
+
+        </h3>
+
+        <h4 style="margin-left: 60px;">What travellers love most</h4>
+            <table cellspacing="20" style="margin-left: 60px;">
+                <tr>
+                    <td style="border: 1px solid; border-radius: 25px; height: 40px; background-color: white; width: 100px; text-align: center;">Heated pool</td>
+                    <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">spa</td>
+                    <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">restorent</td>
+                </tr>
+            </table>
+    </div>
+</div>
+<!--  -->
+<div style="height: 500px; width: 100%;">
+    <img src="https://static.tacdn.com/img2/tc/2023/cross_banner_beaches_desktop_01.jpg" alt="" height="500px" width="100%">
+
+    <div style="color: white; position: absolute; top: 8700px; left: 250px;">
+        <h1>Beaches travellers love</h1>
+        <h2>This year's Travellers' Choice Best of the Best<br> beaches are brought to you by reviews like,<br> this.</h2>
+        <button style="background-color: white; height: 40px; width: 150px; border-radius: 25px;">See the winner</button>
+    </div>
+
+    <div style="background-color: white; height: 280px; width: 400px; border-radius: 25px; position: absolute;top: 8700px;  padding-top: 50px; padding-left: 50px; left: 900px;">
+        <table>
+            <tr>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td>2,032 reviews</td>
+            </tr>
+        </table>
+        <h3>Beautiful beach</h3>
+        <h4>Excellent beach. Crystal clear turquoise sea,<br> golden sand. Cafe at the top of the stairs,<br> donuts on the beach. A real gem.</h4>
+        <table cellspacing="15">
+            <tr>
+                <td>
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f2/7a/default-avatar-2020-25.jpg?w=100&h=100&s=1" alt="" style="height: 35px; width: 35px; border-radius: 50%;">
+                </td>
+                <td>
+                    
+                    @mikemY3411ID
+                </td>
+                <td>
+                    Reviewed May 2024
+                </td>
+                
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div style="width: 1000px; height: 500px; display: flex; justify-content: space-between; margin-left: 220px; margin-top: 50px;">
+    <div style="height: 400px; width: 500px; margin-top: 20px;" >
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/c3/39/22/caption.jpg?w=500&h=400&s=1" alt="">
+    </div>
+
+
+
+    <div style="height: 400px; width: 500px;">
+        <h2>02.</h2>
+        <h1>OBLU SELECT Lobigili</h1>
+        <h2><span ><i class="fa-solid fa-location-dot"></i></span><span>Male, Maldives
+        </span></h2>
+        <table>
+            <tr>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td>2,032 reviews</td>
+            </tr>
+        </table>
+        <h3>
+            Check out OBLU SELECT Lobigili, where idyllic tropical vistas meet nature-inspired designs. Picture a secluded, adults-only setting with modern accommodations, private pools, and amazing views.
+
+        </h3>
+
+        <h4 style="margin-left: 60px;">What travellers love most</h4>
+            <table cellspacing="20" style="margin-left: 60px;">
+                <tr>
+                    <td style="border: 1px solid; border-radius: 25px; height: 40px; background-color: white; width: 100px; text-align: center;">Heated pool</td>
+                    <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">spa</td>
+                    <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">restorent</td>
+                </tr>
+            </table>
+    </div>
+</div>
+
+<!--  -->
+
+<div style="width: 1000px; height: 500px; display: flex; justify-content: space-between; margin-left: 220px; margin-top: 50px;">
+    <div style="height: 400px; width: 500px; margin-top: 20px;" >
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/1b/d3/a4/executive-suite.jpg?w=500&h=400&s=1" alt="">
+    </div>
+
+
+
+    <div style="height: 400px; width: 500px;">
+        <h2>02.</h2>
+        <h1>OBLU SELECT Lobigili</h1>
+        <h2><span ><i class="fa-solid fa-location-dot"></i></span><span>Male, Maldives
+        </span></h2>
+        <table>
+            <tr>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td>2,032 reviews</td>
+            </tr>
+        </table>
+        <h3>
+            Check out OBLU SELECT Lobigili, where idyllic tropical vistas meet nature-inspired designs. Picture a secluded, adults-only setting with modern accommodations, private pools, and amazing views.
+
+        </h3>
+
+        <h4 style="margin-left: 60px;">What travellers love most</h4>
+            <table cellspacing="20" style="margin-left: 60px;">
+                <tr>
+                    <td style="border: 1px solid; border-radius: 25px; height: 40px; background-color: white; width: 100px; text-align: center;">Heated pool</td>
+                    <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">spa</td>
+                    <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">restorent</td>
+                </tr>
+            </table>
+    </div>
+</div>
+
+<!--  -->
+
+<div style="width: 1000px;  height: 500px; display: flex; justify-content: space-between; margin-left: 220px; margin-top: 50px;">
+    <div style="height: 400px; width: 500px; margin-top: 20px;" >
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/16/0d/ca/adiwana-suweta.jpg?w=500&h=400&s=1" alt="">
+    </div>
+
+
+
+    <div style="height: 400px; width: 500px;">
+        <h2>02.</h2>
+        <h1>OBLU SELECT Lobigili</h1>
+        <h2><span ><i class="fa-solid fa-location-dot"></i></span><span>Male, Maldives
+        </span></h2>
+        <table>
+            <tr>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td>2,032 reviews</td>
+            </tr>
+        </table>
+        <h3>
+            Check out OBLU SELECT Lobigili, where idyllic tropical vistas meet nature-inspired designs. Picture a secluded, adults-only setting with modern accommodations, private pools, and amazing views.
+
+        </h3>
+
+        <h4 style="margin-left: 60px;">What travellers love most</h4>
+            <table cellspacing="20" style="margin-left: 60px;">
+                <tr>
+                    <td style="border: 1px solid; border-radius: 25px; height: 40px; background-color: white; width: 100px; text-align: center;">Heated pool</td>
+                    <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">spa</td>
+                    <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">restorent</td>
+                </tr>
+            </table>
+    </div>
+</div>
+
+<!--  -->
+
+<div style="width: 1000px; height: 500px; display: flex; justify-content: space-between; margin-left: 220px; margin-top: 50px;">
+    <div style="height: 400px; width: 500px; margin-top: 20px;" >
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/e1/b9/ed/caption.jpg?w=500&h=400&s=1" alt="">
+    </div>
+
+
+
+    <div style="height: 400px; width: 500px;">
+        <h2>02.</h2>
+        <h1>OBLU SELECT Lobigili</h1>
+        <h2><span ><i class="fa-solid fa-location-dot"></i></span><span>Male, Maldives
+        </span></h2>
+        <table>
+            <tr>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td><div class="rou"></div></td>
+                <td>2,032 reviews</td>
+            </tr>
+        </table>
+        <h3>
+            Check out OBLU SELECT Lobigili, where idyllic tropical vistas meet nature-inspired designs. Picture a secluded, adults-only setting with modern accommodations, private pools, and amazing views.
+
+        </h3>
+
+        <h4 style="margin-left: 60px;">What travellers love most</h4>
+            <table cellspacing="20" style="margin-left: 60px;">
+                <tr>
+                    <td style="border: 1px solid; border-radius: 25px; height: 40px; background-color: white; width: 100px; text-align: center;">Heated pool</td>
+                    <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">spa</td>
+                    <td style="border: 1px solid; border-radius: 25px;height: 40px; background-color: white; width: 100px;text-align: center;">restorent</td>
+                </tr>
+            </table>
+    </div>
+</div>
+
+<div style="background-color: rgb(250, 241, 236); height: 200px; width: 100%; display: flex; justify-content: space-around; align-items: center;">
+    <div style="display: flex; justify-content: space-around;">
+        <div style="height: 150px; width: 60px; margin-top: 15px;">
+            <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg" alt=""
+            style="height: 50px; width:50px; border-radius: 50%;">
+        </div>
+        <div style="height: 150px; width: 550px;">
+            <h4>
+                © 2024 Tripadvisor LLC All rights reserved.</h4>
+                <h6>
+                    Terms of Use  Privacy and Cookies Statement  Cookie consen  Site Map <br>  How the site works
+                    Contact us
+                </h6>
+                <h6 >
+                    This is the version of our website addressed to speakers of English in India. If you are a resident of another country or region, please select<br> the appropriate version of Tripadvisor for your country or region in the drop-down menu. more
+                </h6>
+        </div>
+    </div>
+
+    <div style="display: flex; justify-content: space-around; gap: 50px;">
+        <select name="" id="" style="height: 50px; width: 150px;">
+            <option value=""> india</option>
+        </select>
+        <select name="" id=""style="height: 50px; width: 150px;">
+            <option value=""> 
+                $INR
+            </option>
+        </select>
+    </div>
+    
+</div>
+</body>
+</html>
